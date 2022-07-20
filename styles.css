@@ -14,15 +14,15 @@ body {
 
 header {
     width: 100%;
-    background-color: rgb(98, 15, 192);
-    position: sticky;
-    top: 0%;
+    background-color: #620fc0;
+    position: fixed;
+    box-shadow: 0 0 10px 3px #380474;
 }
 
 #nav-list {
     list-style: none;
     display: flex;
-    padding: 15px;
+    margin: 15px;
     font-size: 20px;
     font-weight: bold;
     justify-content: space-evenly;
@@ -30,7 +30,7 @@ header {
 
 a {
     text-decoration: none;
-    color: rgb(255, 255, 234);
+    color: #ffffea;
 }
 
 .hover {
@@ -40,4 +40,18 @@ a {
 
 a:hover .hover {
     opacity: 100%;
+}
+
+#about, #projects, #contact {
+    padding-top: 70px;
+    border: 1px solid black;
+}
+
+
+#about .container {
+    width: 80%;
+    height: 80%;
+    background-color: #fffb29;
+    border-radius: 10px;
+    margin: auto;
 }
