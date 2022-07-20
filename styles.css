@@ -22,17 +22,22 @@ header {
     z-index: 999;
 }
 
-#nav-list {
+ul {
     list-style: none;
+}
+
+#nav-list{
+    margin: 0;
+    height: 100%;
     display: flex;
-    font-size: 20px;
-    font-weight: bold;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .nav-link {
     color: #ffffea;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 a {
@@ -92,13 +97,18 @@ a:hover .hover {
     top: -5%;
 }
 
-h2 {
+#projects {
+    height: 100%;
+}
+
+#projects h2 {
+    padding-top: 75px;
+    margin: auto;
     text-align: center;
-    padding: 30px;
 }
 
 #card-stack {
-    height: 60%;
+    height: 70%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -128,4 +138,29 @@ h2 {
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+}
+
+#contact h2 {
+    text-align: center;
+    margin: auto;
+}
+
+#contact-list {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+}
+
+.contact-link img {
+    max-width: 120px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #252525;
+    transition: all 0.8s;
+}
+
+.contact-link:hover > img{
+    transform: translateY(-50px);
+    box-shadow: 7px 7px 15px 2px #252525;
 }
