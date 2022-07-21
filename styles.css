@@ -36,7 +36,7 @@ ul {
 
 .nav-link {
     color: #ffffea;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
@@ -67,7 +67,7 @@ a:hover .hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3em;
+    gap: 3rem;
     box-shadow: 7px 7px 15px #918e11;
 }
 
@@ -77,7 +77,7 @@ a:hover .hover {
 
 #hello {
     display: block;
-    font-size: 35px;
+    font-size: 2.25rem;
     font-weight: bold;
     padding-bottom: 10px;
 }
@@ -101,8 +101,12 @@ a:hover .hover {
     height: 100%;
 }
 
+h2 {
+    font-size: 1.7rem;
+}
+
 #projects h2 {
-    padding-top: 75px;
+    padding-top: 65px;
     margin: auto;
     text-align: center;
 }
@@ -135,7 +139,7 @@ a:hover .hover {
     font-family: monospace;
     color: black;
     margin-top: 15px;
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
 }
@@ -150,7 +154,7 @@ a:hover .hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10em;
+    gap: 10%;
 }
 
 .contact-link img {
@@ -163,4 +167,28 @@ a:hover .hover {
 .contact-link:hover > img{
     transform: translateY(-50px);
     box-shadow: 7px 7px 15px 2px #252525;
+}
+
+@media only screen and (max-width: 1150px) {
+    html {
+        font-size: 14px;
+    }
+
+    #about .container {
+        width: 80%;
+    }
+
+    #projects {
+        height: 900px;
+    }
+
+    #projects h2 {
+        padding-top: 0;
+    }
+
+    #card-stack {
+        flex-direction: column;
+        height: 90%;
+    }
+
 }
