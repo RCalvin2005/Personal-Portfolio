@@ -93,6 +93,7 @@ a:hover .hover {
 
 #my-pic {
     position: relative;
+    width: 130%;
     left: -10%;
     top: -5%;
 }
@@ -176,6 +177,11 @@ h2 {
 
     #about .container {
         width: 80%;
+    }
+
+    #pic-container {
+        width: 225px;
+        height: 225px;
     }
 
     #projects {
